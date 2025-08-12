@@ -1,0 +1,15 @@
+MSH|^~\&|NIST Medical EHR^2.16.840.1.113883.3.72.5.50.3^ISO|NIST Medical Center^1111000003^NPI|NIST PH SS APP 2^2.16.840.1.113883.3.72.5.50.9^ISO|NIST PH SS FAC 2^2.16.840.1.113883.3.72.5.50.11^ISO|20250201081500-0600||ADT^A08^ADT_A01|NIST-SS-ED-002.22|P|2.5.1|||AL|ER|||||PH_SS_A08^^2.16.840.1.114222.4.10.3^ISO
+EVN||20250201080000-0600|||||NIST Medical Center^1111000003^NPI|
+PID|1||3333^^^NIST Medical Center&1111000003&NPI^MR||Lane^Andrew^Taylor^^^^L||202502010730-0600|M||2106-3^White^CDCREC~1002-5^American Indian or Alaska Native^CDCREC~2131-1^Other race^CDCREC|^^Oklahoma City^40^74852^USA^^^40125|||||||||||2186-5^Not Hispanic or Latino^CDCREC
+PV1|1|E|||||||||||||||||3333_001^^^NIST Medical Center&1111000003&NPI^VN|||||||||||||||||||||||||202502010730-0600
+PV2|||^Infant was delivered in the emergency room, suffered Medonium Aspiration, and exhibits a Congenital Diaphramatic Hernia.
+OBX|1|CWE|SS003^Facility/Visit Type^PHINQUESTION||261QE0002X^Emergency Care^HCPTNUCC||||||F|||202502010732-0600
+OBX|2|NM|21612-7^Age at Time Patient Reported^LN||0|mo^Months^UCUM|||||F|||202502010732-0600
+OBX|3|TX|8661-1^Chief complaint:Find:Pt:Patient:Nom:Reported^LN||Newborn shows Congenital diaphragmatic hernia||||||F|||202502010732-0600
+OBX|4|NM|8302-2^Height^LN||19|[in_us]^inch^UCUM|||||F|||202502010732-0600
+OBX|5|NM|3141-9^Weight^LN||7|[lb_av]^pound^UCUM|||||F|||202502010732-0600
+DG1|1||206292002^Meconium aspiration syndrome (disorder)^SCT||202502010733-0600|W
+DG1|2||17190001^Congenital diaphragmatic hernia (disorder)^SCT||202502010733-0600|W
+DG1|3||88386004^Congenital anomaly of diaphragm (disorder)^SCT||202502010800-0600|W
+PR1|1||74150^Computed tomography, abdomen; without contrast material^C4||202502010800-0600
+IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U||||||||||||||||||||||||||||||||||||||||||||

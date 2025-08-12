@@ -1,0 +1,20 @@
+
+
+<div ng-controller="CBVocabularyCtrl">
+    <div class="panel panel-info">
+        <div class="panel-body">
+            <div ng-show="cb.testStep != null && cb.testStep.testContext != null && cb.testStep.testContext.vocabularyLibrary && cb.testStep.testContext.vocabularyLibrary!= null">
+                <div vocab-search type="cb"></div>
+            </div>
+
+            <div ng-show="cb.testStep != null && cb.testStep.testContext != null &&  (!cb.testStep.testContext.vocabularyLibrary || cb.testStep.testContext.vocabularyLibrary === null)">
+                No Vocabulary associated to this test step.
+            </div>
+
+            <div ng-show="cb.testStep === null">
+                <div class="col-md-10"> No Test Step Loaded.</div>
+            </div>
+
+        </div>
+    </div>
+</div>

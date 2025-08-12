@@ -1,0 +1,20 @@
+
+
+<div ng-controller="CBProfileViewerCtrl">
+    <div class="panel panel-info">
+        <div class="panel-body">
+            <div id="executionPanel">
+            <div ng-show="cb.testStep != null && cb.testStep.testContext.profile && cb.testStep.testContext.profile!= null">
+                <div profile-viewer type="cb"></div>
+            </div>
+            <div ng-show="cb.testStep != null &&  cb.testStep.testContext != null &&  (!cb.testStep.testContext.profile || cb.testStep.testContext.profile === null)">
+                No Profile Associated to this Test Step.
+            </div>
+
+            <div ng-show="cb.testStep === null">
+                No Test Step Loaded.
+            </div>
+</div>
+        </div>
+    </div>
+</div>

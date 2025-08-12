@@ -1,0 +1,14 @@
+{
+  "id": 207212539,
+  "name": "ADT-ACK-Acknowledgement",
+  "description": "General Acknowledgment Message",
+  "hl7v2": {
+    "messageId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87f",
+    "constraintId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_C",
+    "valueSetLibraryId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_VS",
+    "valueSetBindingsId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_B",
+    "slicingsId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_S",
+    "coConstraintsId": "67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_CC"
+  },
+  "position": 5
+}

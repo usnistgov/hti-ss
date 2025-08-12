@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_C" UUID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_C" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.0/src/main/resources/hl7-v2-schemas/ConformanceContext.xsd">
+  <MetaData Date="No Date Info" Name="[IN PROGRESS] HL7 Version 2.5.1 Implementation Guide: Syndromic Surveillance, Release 1 - US Realm Standard for Trial Use, July 2019" OrgName="No Org Info" Version="2.5.1"/>
+  <Predicates>
+    <Datatype>
+      <ByID ID="CWE_SS">
+        <Predicate FalseUsage="RE" Target="2[1]" TrueUsage="R">
+          <Description>If CWE.1 (Identifier) is not valued</Description>
+          <Condition>
+            <NOT>
+              <Presence Path="1[1]"/>
+            </NOT>
+          </Condition>
+        </Predicate>
+        <Predicate FalseUsage="X" Target="3[1]" TrueUsage="R">
+          <Description>If CWE.1 (Identifier) is valued</Description>
+          <Condition>
+            <Presence Path="1[1]"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="CE_SS">
+        <Predicate FalseUsage="RE" Target="2[1]" TrueUsage="R">
+          <Description>If CE.1 (Identifier) is not valued</Description>
+          <Condition>
+            <NOT>
+              <Presence Path="1[1]"/>
+            </NOT>
+          </Condition>
+        </Predicate>
+        <Predicate FalseUsage="X" Target="3[1]" TrueUsage="R">
+          <Description>If CE.1 (Identifier) is valued</Description>
+          <Condition>
+            <Presence Path="1[1]"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+    </Datatype>
+    <Segment>
+      <ByID ID="OBX_SS_COCON16_66fc3ee8857aba0006c8b87d">
+        <Predicate FalseUsage="X" Target="6[1]" TrueUsage="R">
+          <Description>If OBX-2 (Value Type) contains the value 'NM' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="2[1]" Text="NM"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b87c">
+        <Predicate FalseUsage="X" Target="6[1]" TrueUsage="R">
+          <Description>If OBX-2 (Value Type) contains the value 'NM' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="2[1]" Text="NM"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b207">
+        <Predicate FalseUsage="X" Target="6[1]" TrueUsage="R">
+          <Description>If OBX-2 (Value Type) contains the value 'NM' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="2[1]" Text="NM"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="PID_SS02">
+        <Predicate FalseUsage="X" Target="29[1]" TrueUsage="R">
+          <Description>If PID-30 (Patient Death Indicator) contains the value 'Y' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="30[1]" Text="Y"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="OBX_SS">
+        <Predicate FalseUsage="X" Target="6[1]" TrueUsage="R">
+          <Description>If OBX-2 (Value Type) contains the value 'NM' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="2[1]" Text="NM"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b87e">
+        <Predicate FalseUsage="X" Target="6[1]" TrueUsage="R">
+          <Description>If OBX-2 (Value Type) contains the value 'NM' (Case Sensitive).</Description>
+          <Condition>
+            <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="2[1]" Text="NM"/>
+          </Condition>
+        </Predicate>
+      </ByID>
+    </Segment>
+    <Group/>
+    <Message/>
+  </Predicates>
+  <Constraints>
+    <Datatype>
+      <ByID ID="VID_SS">
+        <Constraint ID="VID_SS_001" Strength="SHALL">
+          <Description>VID.1 (Version ID) shall contain the value '2.5.1' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="2.5.1"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="DTM_DD">
+        <Constraint ID="DTM_DD_DateTimeConstraint">
+          <Description>The Date/Time element SHALL follow the Date/Time pattern 'YYYYMMDD[HH[MM[SS[.S[S[S[S]]]]]]][+/-ZZZZ]'.</Description>
+          <Assertion>
+            <Format Path="." Regex="^(\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="DTM_SS">
+        <Constraint ID="DTM_SS_DateTimeConstraint">
+          <Description>The Date/Time element SHALL follow the Date/Time pattern 'YYYYMMDDHHMMSS[.S[S[S[S]]]]+/-ZZZZ'.</Description>
+          <Assertion>
+            <Format Path="." Regex="^(\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})$"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="DT">
+        <Constraint ID="DT_DateTimeConstraint">
+          <Description>The value SHALL follow the Date/Time pattern 'YYYY[MM[DD]]'.</Description>
+          <Assertion>
+            <Format Path="." Regex="^(\d{4}|\d{6}|\d{8})$"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="DTM">
+        <Constraint ID="DTM_DateTimeConstraint">
+          <Description>The value SHALL follow the Date/Time pattern 'YYYY[MM[DD[HH[MM[SS[.S[S[S[S]]]]]]]]][+/-ZZZZ]'.</Description>
+          <Assertion>
+            <Format Path="." Regex="^(\d{4}|\d{6}|\d{8}|\d{10}|\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="DTM_MM">
+        <Constraint ID="DTM_MM_DateTimeConstraint">
+          <Description>The Date/Time element SHALL follow the Date/Time pattern 'YYYYMMDDHHMM[SS[.S[S[S[S]]]]][+/-ZZZZ]'.</Description>
+          <Assertion>
+            <Format Path="." Regex="^(\d{12}|\d{14}|\d{14}\.\d|\d{14}\.\d{2}|\d{14}\.\d{3}|\d{14}\.\d{4})([+-]\d{4})?$"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="PT_SS">
+        <Constraint ID="PT_SS_6152904" Strength="SHALL">
+          <Description>PT.1 (Processing ID) shall contain one of the values in the list: ['P','T','D'] (Case Sensitive).</Description>
+          <Assertion>
+            <StringList CSV="P,T,D" IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="XPN_SS">
+        <Constraint ID="XPN_SS_007" Strength="SHALL">
+          <Description>XPN.7 (Name Type Code) shall contain one of the values in the list: ['L','S','U'] (Case Sensitive).</Description>
+          <Assertion>
+            <StringList CSV="L,S,U" IgnoreCase="false" NotPresentBehavior="PASS" Path="7[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+    </Datatype>
+    <Segment>
+      <ByID ID="DG1_SS">
+        <Constraint ID="DG1_SS_8603629" Strength="SHALL">
+          <Description>DG1-3.3 (Name of Coding System) shall contain one of the values in the list: ['I10C','SCT'] (Case Sensitive).</Description>
+          <Assertion>
+            <StringList CSV="I10C,SCT" IgnoreCase="false" NotPresentBehavior="PASS" Path="3[1].3[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="MSH_SS">
+        <Constraint ID="MSH_SS_7465888" Strength="SHALL">
+          <Description>MSH-2 (Encoding Characters) shall contain the value '^~\&amp;' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="2[1]" Text="^~\&amp;"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="MSH_SS_4611129" Strength="SHALL">
+          <Description>MSH-1 (Field Separator) shall contain the value '|' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="|"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="OBX_SS_COCON16_66fc3ee8857aba0006c8b87d">
+        <Constraint ID="OBX_SS_001" Strength="SHALL">
+          <Description>If OBX-3.1 contains 11449-6, the value of OBX-5 SHALL be one of list values: Y, N, UNK</Description>
+          <Assertion> 
+            <IMPLY> 
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="3[1].1[1]" Text="11449-6"/>  
+              <StringList CSV="Y,N,UNK" IgnoreCase="false" NotPresentBehavior="FAIL" Path="5[1].1[1]"/> 
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="OBX_SS_002" Strength="SHALL">
+          <Description>OBX-1 (Set ID - OBX) shall be valued sequentially starting with the value '1'.</Description>
+          <Assertion>
+            <SetID Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b87c">
+        <Constraint ID="OBX_SS_001" Strength="SHALL">
+          <Description>If OBX-3.1 contains 11449-6, the value of OBX-5 SHALL be one of list values: Y, N, UNK</Description>
+          <Assertion> 
+            <IMPLY> 
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="3[1].1[1]" Text="11449-6"/>  
+              <StringList CSV="Y,N,UNK" IgnoreCase="false" NotPresentBehavior="FAIL" Path="5[1].1[1]"/> 
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="OBX_SS_002" Strength="SHALL">
+          <Description>OBX-1 (Set ID - OBX) shall be valued sequentially starting with the value '1'.</Description>
+          <Assertion>
+            <SetID Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b207">
+        <Constraint ID="OBX_SS_001" Strength="SHALL">
+          <Description>If OBX-3.1 contains 11449-6, the value of OBX-5 SHALL be one of list values: Y, N, UNK</Description>
+          <Assertion> 
+            <IMPLY> 
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="3[1].1[1]" Text="11449-6"/>  
+              <StringList CSV="Y,N,UNK" IgnoreCase="false" NotPresentBehavior="FAIL" Path="5[1].1[1]"/> 
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="OBX_SS_002" Strength="SHALL">
+          <Description>OBX-1 (Set ID - OBX) shall be valued sequentially starting with the value '1'.</Description>
+          <Assertion>
+            <SetID Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="PR1_SS">
+        <Constraint ID="PR1_SS_6639954" Strength="SHALL">
+          <Description>PR1-3.3 (Name of Coding System) shall contain one of the values in the list: ['C4' (CPT4),'I10' (ICD-10),'I10P' (ICD-10-PCS)] (Case Sensitive).</Description>
+          <Assertion>
+            <StringList CSV="C4,I10,I10P" IgnoreCase="false" NotPresentBehavior="PASS" Path="3[1].3[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="OBX_SS">
+        <Constraint ID="OBX_SS_001" Strength="SHALL">
+          <Description>If OBX-3.1 contains 11449-6, the value of OBX-5 SHALL be one of list values: Y, N, UNK</Description>
+          <Assertion> 
+            <IMPLY> 
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="3[1].1[1]" Text="11449-6"/>  
+              <StringList CSV="Y,N,UNK" IgnoreCase="false" NotPresentBehavior="FAIL" Path="5[1].1[1]"/> 
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="OBX_SS_002" Strength="SHALL">
+          <Description>OBX-1 (Set ID - OBX) shall be valued sequentially starting with the value '1'.</Description>
+          <Assertion>
+            <SetID Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="OBX_SS_COCON12_66fc3ee8857aba0006c8b87e">
+        <Constraint ID="OBX_SS_001" Strength="SHALL">
+          <Description>If OBX-3.1 contains 11449-6, the value of OBX-5 SHALL be one of list values: Y, N, UNK</Description>
+          <Assertion> 
+            <IMPLY> 
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="3[1].1[1]" Text="11449-6"/>  
+              <StringList CSV="Y,N,UNK" IgnoreCase="false" NotPresentBehavior="FAIL" Path="5[1].1[1]"/> 
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="OBX_SS_002" Strength="SHALL">
+          <Description>OBX-1 (Set ID - OBX) shall be valued sequentially starting with the value '1'.</Description>
+          <Assertion>
+            <SetID Path="1[1]"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+    </Segment>
+    <Group/>
+    <Message>
+      <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87c">
+        <Constraint ID="ADT^A04_MSH_21" Strength="SHALL">
+          <Description>( MSH-21.1 (Entity Identifier) shall contain the value 'PH_SS_A04' (Case Sensitive). AND ( MSH-21.3 (Universal ID) shall contain the value '2.16.840.1.114222.4.10.3' (Case Insensitive). AND MSH-21.4 (Universal ID Type) shall contain the value 'ISO' (Case Sensitive). ) ) IN exactly one occurrence of MSH-21 (Message Profile Identifier)</Description>
+          <Assertion>
+            <SubContext MaxOccurrence="1" MinOccurrence="1" Path="1[1].21[*]">
+              <AND>
+                <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="PH_SS_A04"/>
+                <AND>
+                  <PlainText IgnoreCase="true" NotPresentBehavior="PASS" Path="3[1]" Text="2.16.840.1.114222.4.10.3"/>
+                  <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="4[1]" Text="ISO"/>
+                </AND>
+              </AND>
+            </SubContext>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A04_MSH_91" Strength="SHALL">
+          <Description>MSH-9.1 (Message Code) shall contain the value 'ADT' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].1[1]" Text="ADT"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A04_MSH_92" Strength="SHALL">
+          <Description>MSH-9.2 (Trigger Event) shall contain the value 'A04' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].2[1]" Text="A04"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="PID_SS_A04_A08_A03_1" Strength="SHALL">
+          <Description>If PV1-36 (Discharge Disposition) contains one of the values in the list: ['20','40','41','42'] (Case Sensitive). then PID-30 (Patient Death Indicator) shall contain the value 'Y' (Case Sensitive).</Description>
+          <Assertion>
+            <IMPLY>
+              <StringList CSV="20,40,41,42" IgnoreCase="false" NotPresentBehavior="FAIL" Path="8[1].36[1]"/>
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="4[1].30[1]" Text="Y"/>
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A04_MSH_93" Strength="SHALL">
+          <Description>MSH-9.3 (Message Structure) shall contain the value 'ADT_A01' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].3[1]" Text="ADT_A01"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87d">
+        <Constraint ID="PID_SS_A04_A08_A03_1" Strength="SHALL">
+          <Description>If PV1-36 (Discharge Disposition) contains one of the values in the list: ['20','40','41','42'] (Case Sensitive). then PID-30 (Patient Death Indicator) shall contain the value 'Y' (Case Sensitive).</Description>
+          <Assertion>
+            <IMPLY>
+              <StringList CSV="20,40,41,42" IgnoreCase="false" NotPresentBehavior="FAIL" Path="8[1].36[1]"/>
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="4[1].30[1]" Text="Y"/>
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A03_MSH_92" Strength="SHALL">
+          <Description>MSH-9.2 (Trigger Event) shall contain the value 'A03' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].2[1]" Text="A03"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A03_MSH_91" Strength="SHALL">
+          <Description>MSH-9.1 (Message Code) shall contain the value 'ADT' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].1[1]" Text="ADT"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A03_MSH_93" Strength="SHALL">
+          <Description>MSH-9.3 (Message Structure) shall contain the value 'ADT_A03' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].3[1]" Text="ADT_A03"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A03_MSH_21" Strength="SHALL">
+          <Description>( ( MSH-21.4 (Universal ID Type) shall contain the value 'ISO' (Case Sensitive). AND MSH-21.3 (Universal ID) shall contain the value '2.16.840.1.114222.4.10.3' (Case Insensitive). ) AND MSH-21.1 (Entity Identifier) shall contain the value 'PH_SS_A03' (Case Sensitive). ) IN exactly one occurrence of MSH-21 (Message Profile Identifier)</Description>
+          <Assertion>
+            <SubContext MaxOccurrence="1" MinOccurrence="1" Path="1[1].21[*]">
+              <AND>
+                <AND>
+                  <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="4[1]" Text="ISO"/>
+                  <PlainText IgnoreCase="true" NotPresentBehavior="PASS" Path="3[1]" Text="2.16.840.1.114222.4.10.3"/>
+                </AND>
+                <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="PH_SS_A03"/>
+              </AND>
+            </SubContext>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b207">
+        <Constraint ID="ADT^A01_MSH_92" Strength="SHALL">
+          <Description>MSH-9.2 (Trigger Event) shall contain the value 'A01' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].2[1]" Text="A01"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A01_MSH_93" Strength="SHALL">
+          <Description>MSH-9.3 (Message Structure) shall contain the value 'ADT_A01' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].3[1]" Text="ADT_A01"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A01_MSH_21" Strength="SHALL">
+          <Description>( ( MSH-21.4 (Universal ID Type) shall contain the value 'ISO' (Case Sensitive). AND MSH-21.3 (Universal ID) shall contain the value '2.16.840.1.114222.4.10.3' (Case Insensitive). ) AND MSH-21.1 (Entity Identifier) shall contain the value 'PH_SS_A01' (Case Sensitive). ) IN exactly one occurrence of MSH-21 (Message Profile Identifier)</Description>
+          <Assertion>
+            <SubContext MaxOccurrence="1" MinOccurrence="1" Path="1[1].21[*]">
+              <AND>
+                <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="PH_SS_A01"/>
+                <AND>
+                  <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="4[1]" Text="ISO"/>
+                  <PlainText IgnoreCase="true" NotPresentBehavior="PASS" Path="3[1]" Text="2.16.840.1.114222.4.10.3"/>
+                </AND>
+              </AND>
+            </SubContext>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A01_MSH_91" Strength="SHALL">
+          <Description>MSH-9.1 (Message Code) shall contain the value 'ADT' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].1[1]" Text="ADT"/>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87f">
+        <Constraint ID="MSH_SS_ACK_02" Strength="SHALL">
+          <Description>MSH-9.3 (Message Structure) shall contain the value 'ACK' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].3[1]" Text="ACK"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="MSH_SS_ACK_01" Strength="SHALL">
+          <Description>MSH-9.1 (Message Code) shall contain the value 'ACK' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].1[1]" Text="ACK"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="MSH_SS_ACK_03" Strength="SHALL">
+          <Description>( MSH-21.1 (Entity Identifier) shall contain the value 'PH_SS_ACK' (Case Sensitive). AND ( MSH-21.3 (Universal ID) shall contain the value '2.16.840.1.114222.4.10.3' (Case Insensitive). AND MSH-21.4 (Universal ID Type) shall contain the value 'ISO' (Case Sensitive). ) ) IN exactly one occurrence of MSH-21 (Message Profile Identifier)</Description>
+          <Assertion>
+            <SubContext MaxOccurrence="1" MinOccurrence="1" Path="1[1].21[*]">
+              <AND>
+                <AND>
+                  <PlainText IgnoreCase="true" NotPresentBehavior="PASS" Path="3[1]" Text="2.16.840.1.114222.4.10.3"/>
+                  <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="4[1]" Text="ISO"/>
+                </AND>
+                <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="PH_SS_ACK"/>
+              </AND>
+            </SubContext>
+          </Assertion>
+        </Constraint>
+      </ByID>
+      <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87e">
+        <Constraint ID="PID_SS_A04_A08_A03_1" Strength="SHALL">
+          <Description>If PV1-36 (Discharge Disposition) contains one of the values in the list: ['20','40','41','42'] (Case Sensitive). then PID-30 (Patient Death Indicator) shall contain the value 'Y' (Case Sensitive).</Description>
+          <Assertion>
+            <IMPLY>
+              <StringList CSV="20,40,41,42" IgnoreCase="false" NotPresentBehavior="FAIL" Path="8[1].36[1]"/>
+              <PlainText IgnoreCase="false" NotPresentBehavior="FAIL" Path="4[1].30[1]" Text="Y"/>
+            </IMPLY>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A08_MSH_91" Strength="SHALL">
+          <Description>MSH-9.1 (Message Code) shall contain the value 'ADT' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].1[1]" Text="ADT"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A08_MSH_92" Strength="SHALL">
+          <Description>MSH-9.2 (Trigger Event) shall contain the value 'A08' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].2[1]" Text="A08"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A08_MSH_93" Strength="SHALL">
+          <Description>MSH-9.3 (Message Structure) shall contain the value 'ADT_A01' (Case Sensitive).</Description>
+          <Assertion>
+            <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1].9[1].3[1]" Text="ADT_A01"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="ADT^A08^MSH_21" Strength="SHALL">
+          <Description>( MSH-21.1 (Entity Identifier) shall contain the value 'PH_SS_A08' (Case Sensitive). AND ( MSH-21.3 (Universal ID) shall contain the value '2.16.840.1.114222.4.10.3' (Case Insensitive). AND MSH-21.4 (Universal ID Type) shall contain the value 'ISO' (Case Sensitive). ) ) IN exactly one occurrence of MSH-21 (Message Profile Identifier)</Description>
+          <Assertion>
+            <SubContext MaxOccurrence="1" MinOccurrence="1" Path="1[1].21[*]">
+              <AND>
+                <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="1[1]" Text="PH_SS_A08"/>
+                <AND>
+                  <PlainText IgnoreCase="true" NotPresentBehavior="PASS" Path="3[1]" Text="2.16.840.1.114222.4.10.3"/>
+                  <PlainText IgnoreCase="false" NotPresentBehavior="PASS" Path="4[1]" Text="ISO"/>
+                </AND>
+              </AND>
+            </SubContext>
+          </Assertion>
+        </Constraint>
+      </ByID>
+    </Message>
+  </Constraints>
+</ConformanceContext>

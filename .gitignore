@@ -1,0 +1,14 @@
+target
+node_modules
+bower_components
+.classpath
+.project
+.settings/
+.DS_Store
+.idea
+*.iml
+*test/resources/outputs/*
+/bin/
+.sass-cache
+.tmp
+hti-ss-web/src/*

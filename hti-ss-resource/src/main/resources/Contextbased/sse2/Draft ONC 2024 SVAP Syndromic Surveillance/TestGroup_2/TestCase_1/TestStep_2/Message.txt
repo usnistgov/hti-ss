@@ -1,0 +1,20 @@
+MSH|^~\&|NIST Medical EHR^2.16.840.1.113883.3.72.5.50.3^ISO|NIST Medical Center^1111000003^NPI|NIST PH SS APP 2^2.16.840.1.113883.3.72.5.50.9^ISO|NIST PH SS FAC 2^2.16.840.1.113883.3.72.5.50.11^ISO|20240717173000-0500||ADT^A08^ADT_A01|NIST-SS-ED-002.12|P|2.5.1|||AL|ER|||||PH_SS_A08^^2.16.840.1.114222.4.10.3^ISO
+EVN||20240717170000-0500|||||NIST Medical Center^1111000003^NPI|
+PID|1||222^^^NIST Medical Center&1111000003&NPI^MR||~^^^^^^S|||F||2106-3^White^CDCREC|^^Chicago^17^60601^USA
+PV1|1|E|||||||||||||||||20120709_0064^^^NIST Medical Center&1111000003&NPI^VN|||||||||||||||||||||||||202407171700-0500
+PV2|||^the patient turned her bicycle in to a bus moving at 35 mph. The collision threw the cyclist, who was not wearing a helmet, head-first to the ground.|
+OBX|1|CWE|SS003^Facility/Visit Type^PHINQUESTION||261QE0002X^Emergency Care^HCPTNUCC||||||F|||202407171700-0500
+OBX|2|NM|21612-7^Age at Time Patient Reported^LN||35|a^year^UCUM|||||F|||202407171720-0500
+OBX|3|NM|8302-2^Height^LN||65|[in_us]^inch^UCUM|||||F|||202407171700-0500
+OBX|4|NM|3141-9^Weight^LN||128|[lb_av]^pound^UCUM|||||F|||202407171700-0500
+OBX|5|NM|39156-5^Body Mass Index^LN||21.3|kg/m2^kilogram / (meter squared)^UCUM|||||F|||202407171700-0500
+OBX|6|CWE|72166-2^Tobacco Smoking Status^LN||266927001^Unknown if ever smoked^SCT||||||F|||202407171700-0500
+OBX|7|XAD|SS002^Treating Facility Location^PHINQUESTION||1234 Anywhere Street^^Doraville^13^30341^USA^C^^13089||||||F|||202407171700-0500
+OBX|8|CWE|11449-6^Pregnancy Status^LN||N^No^HL70532||||||F|||202407171700-0500
+OBX|9|TX|54094-8^EMERGENCY DEPARTMENT TRIAGE NOTE^LN||patient sustained critical head and neck injuries due to a collision with a bus while she was riding a bicycle.||||||F|||202407171700-0500
+OBX|10|TX|10182-4^History of travel Narrative^LN||Arrived from France two days ago.||||||F|||202407171700-0500
+OBX|11|CWE|56816-2^HospitalUnit^LN||1108-0^EmergencyDepartment^HSLOC||||||F|||202407171700-0500
+DG1|1||S02112A^Type III occipital condyle fracture, initial encounter for closed fracture^I10C||202502201720-0500|W
+DG1|2||S060X9A^Concussion with loss of consciousness of unspecified duration, initial encounter^I10C||202502201720-0500|W
+PR1|1||BW290ZZ^Computerized Tomography (CT Scan) of Head and Neck using High Osmolar Contrast^I10||202502201400-0500
+IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
