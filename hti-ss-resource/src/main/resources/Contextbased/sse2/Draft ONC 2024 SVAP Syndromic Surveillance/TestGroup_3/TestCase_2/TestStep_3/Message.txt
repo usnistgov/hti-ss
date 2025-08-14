@@ -3,8 +3,8 @@ EVN||20250220170000-0400|||||NIST Hospital^1111000001^NPI|
 PID|1||3333^^^NIST Hospital&1111000001&NPI^MR||Parker^Camron^Li^^^^L||20241115|M||2106-3^White^CDCREC~2028-9^Asian^CDCREC|^^Columbus^39^43058^USA^^^39049|||||||||||2135-2^ Hispanic or Latino^CDCREC
 PV1|1|I||U|||||||||||||||3333_001^^^NIST Hospital&1111000001&NPI^VN|||||||||||||||||01||||||||202502150700-0400|202502201700-0400
 PV2|||^infant has cough, fever, decreased appetite, wheezing and apnea
-DG1|1||785744001^Bronchitis co-occurrent with acute wheeze (disorder)^SCT||20250215070000-0400|F
-DG1|2||416113008^Febrile disorder (disorder)^SCT||20250215070000-0400|F
+DG1|1||56018004^Bronchitis co-occurrent with acute wheeze (disorder)^SCT||20250215070000-0400|F
+DG1|2||386661006^Febrile disorder (disorder)^SCT||20250215070000-0400|F
 DG1|3||724229002^Apnea of infancy (disorder)^SCT||20250215070000-0400|F
 DG1|4||700213005^Avoidant restrictive food intake disorder (disorder)^SCT||20250215070000-0400|F
 DG1|5||417850002^Respiratory tract congestion and cough (disorder)^SCT||20250215070000-0400|F

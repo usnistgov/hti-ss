@@ -3,7 +3,7 @@ EVN||20241020120000-0500|||||NIST Urgent Care^1111000005^NPI|
 PID|1||11112^^^NIST Urgent Care&1111000005&NPI^MR||Sayler^Marcus^William^^^^L||19620808|M||1002-5^American Indian or Alaska Native^CDCREC|^^Decatur^13^30303^USA^^^13121|||||||||||2135-2^Hispanic or Latino^CDCREC
 PV1|1|O|||||||||||||||||1111_001^^^NIST Urgent Care&1111000005&NPI^VN|||||||||||||||||01||||||||202410201200-0500|202410201700-0500|
 PV2|||^Vomiting, diarrhea, nausea, and abdominal pain|
-DG1|1||34095006^Dehydration (disorder)^SCT||202410201700-0500|F|
+DG1|1||442438000^Dehydration (disorder)^SCT||202410201700-0500|F
 DG1|2||25374005^Gastroenteritis (disorder)^SCT||202410201700-0500|W|
 DG1|3||16932000^Nausea and vomiting (disorder)^SCT||202410201700-0500|F|
 PR1|1||3E0337Z^Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach^I10P||202410201300-0500

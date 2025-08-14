@@ -9,8 +9,8 @@ OBX|3|NM|21612-7^Age at Time Patient Reported^LN||2|mo^month^UCUM|||||F|||202502
 OBX|4|NM|8302-2^Height^LN||23|[in_us]^inch^UCUM|||||F|||202502150700-0400
 OBX|5|NM|3141-9^Weight^LN||12.5|[lb_av]^pound^UCUM|||||F|||202502150700-0400
 OBX|6|CWE|72166-2^Tobacco Smoking Status^LN||266919005^Never Smoked^SCT||||||F|||202502150700-0400
-DG1|1||785744001^Bronchitis co-occurrent with acute wheeze (disorder)^SCT||20250215070000-0400|A
-DG1|2||416113008^Febrile disorder (disorder)^SCT||20250215070000-0400|A
+DG1|1||56018004^Bronchitis co-occurrent with acute wheeze (disorder)^SCT||20250215070000-0400|A
+DG1|2||386661006^Febrile disorder (disorder)^SCT||20250215070000-0400|A
 DG1|3||724229002^Apnea of infancy (disorder)^SCT||20250215070000-0400|A
 DG1|4||700213005^Avoidant restrictive food intake disorder (disorder)^SCT||20250215070000-0400|A
 DG1|5||417850002^Respiratory tract congestion and cough (disorder)^SCT||20250215070000-0400|A

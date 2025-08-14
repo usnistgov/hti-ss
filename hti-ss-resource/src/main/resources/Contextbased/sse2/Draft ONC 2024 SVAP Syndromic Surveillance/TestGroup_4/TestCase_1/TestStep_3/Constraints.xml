@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="689b4439e4b0a3ad6100e9ad" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
-  <MetaData Date="Tue Aug 12 13:40:09 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="689ddf87e4b0a95ae361a93b" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
+  <MetaData Date="Thu Aug 14 13:07:19 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
   <Constraints>
     <Message>
       <ByID ID="67bc85d8e4b0a4d607a8f397_675b1d62e4b06103017974b5_66fc3ee8857aba0006c8b87e">
@@ -754,17 +754,17 @@
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
           <Description>Expected content is missing. The empty value at DG1-3.1 (Identifier) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[1].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1-3.1 (Identifier) does not match the expected value: 'B059'.</Description>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1-3.1 (Identifier) does not match one of the expected values: B05.9,B059,14189004,74325003</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="14[1].3[1].1[1]" Text="B059"/>
+            <StringList CSV="B05.9,B059,14189004,74325003" Path="14[1].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].3[1].2[1]">
@@ -775,17 +775,17 @@
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].3[1].3[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
           <Description>Expected content is missing. The empty value at DG1-3.3 (Name of Coding System) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[1].3[1].3[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].3[1].3[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1-3.3 (Name of Coding System) does not match the expected value: 'I10C'.</Description>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[1].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1-3.3 (Name of Coding System) does not match one of the expected values: SCT,I10C</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="14[1].3[1].3[1]" Text="I10C"/>
+            <StringList CSV="SCT,I10C" Path="14[1].3[1].3[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[1].5[1].1[1]">
@@ -818,9 +818,9 @@
         </Constraint>
         <Constraint ID="Content" Target="14[2].3[1].1[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[2].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1[2]-3.1 (Identifier) does not match one of the expected values: H10.10,H1010</Description>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[2]-3.1 (Identifier) does not match one of the expected values: H10.10,9826008,H1010,53726008</Description>
           <Assertion>
-            <StringList CSV="H10.10,H1010" Path="14[2].3[1].1[1]"/>
+            <StringList CSV="H10.10,9826008,H1010,53726008" Path="14[2].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[2].3[1].2[1]">
@@ -866,17 +866,17 @@
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[3].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
           <Description>Expected content is missing. The empty value at DG1[3]-3.1 (Identifier) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[3].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[3].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1[3]-3.1 (Identifier) does not match the expected value: 'R509'.</Description>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[3]-3.1 (Identifier) does not match one of the expected values: R50.9,416113008,R509,386661006</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="14[3].3[1].1[1]" Text="R509"/>
+            <StringList CSV="R50.9,416113008,R509,386661006" Path="14[3].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[3].3[1].2[1]">
@@ -884,6 +884,20 @@
           <Description>Expected content is missing. The empty value at DG1[3]-3.2 (Text) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[3].3[1].2[1]"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="Content" Target="14[3].3[1].3[1]">
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Expected content is missing. The empty value at DG1[3]-3.3 (Name of Coding System) is expected to be present.</Description>
+          <Assertion>
+            <Presence Path="14[3].3[1].3[1]"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="Content" Target="14[3].3[1].3[1]">
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[3].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[3]-3.3 (Name of Coding System) does not match one of the expected values: SCT,I10C</Description>
+          <Assertion>
+            <StringList CSV="SCT,I10C" Path="14[3].3[1].3[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[3].5[1].1[1]">
@@ -908,17 +922,17 @@
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[4].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
           <Description>Expected content is missing. The empty value at DG1[4]-3.1 (Identifier) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[4].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[4].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1[4]-3.1 (Identifier) does not match the expected value: 'R059'.</Description>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[4]-3.1 (Identifier) does not match one of the expected values: R059,59994004,R05.9,11833005</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="14[4].3[1].1[1]" Text="R059"/>
+            <StringList CSV="R059,59994004,R05.9,11833005" Path="14[4].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[4].3[1].2[1]">
@@ -926,6 +940,20 @@
           <Description>Expected content is missing. The empty value at DG1[4]-3.2 (Text) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[4].3[1].2[1]"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="Content" Target="14[4].3[1].3[1]">
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Expected content is missing. The empty value at DG1[4]-3.3 (Name of Coding System) is expected to be present.</Description>
+          <Assertion>
+            <Presence Path="14[4].3[1].3[1]"/>
+          </Assertion>
+        </Constraint>
+        <Constraint ID="Content" Target="14[4].3[1].3[1]">
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[4]-3.3 (Name of Coding System) does not match one of the expected values: SCT,I10C</Description>
+          <Assertion>
+            <StringList CSV="SCT,I10C" Path="14[4].3[1].3[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[4].5[1].1[1]">

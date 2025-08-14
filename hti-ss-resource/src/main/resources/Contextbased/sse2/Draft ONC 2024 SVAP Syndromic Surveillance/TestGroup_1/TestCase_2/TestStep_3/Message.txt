@@ -12,7 +12,7 @@ OBX|6|NM|3141-9^Weight^LN||180|[lb_av]^pound^UCUM|||||F|||202410201230-0500
 OBX|7|NM|39156-5^BMI^LN||35|kg/m2^kilogram / (meter squared)^UCUM|||||F|||202410201230-0500
 OBX|8|XAD|SS002^Treating Facility Location^PHINQUESTION||1234 Anywhere Street^^Doraville^13^303 41^USA^C^^13089||||||F|||20241020120000-0500
 OBX|9|TX|10182-4^History of travel Narrative^LN||Spent 4 days helping out in the heavily flooded area of Hurricane City. Returned home 2 days prior to symptoms.||||||F|||20241020120000-0500
-DG1|1||34095006^Dehydration (disorder)^SCT||202410201300-0500|F
+DG1|1||442438000^Dehydration (disorder)^SCT||202410201300-0500|F
 DG1|2||25374005^Gastroenteritis (disorder)^SCT||202410201300-0500|F
 DG1|3||16932000^Nausea and vomiting (disorder)^SCT||202410201240-0500|F
 DG1|4||240370009^Cryptosporidiosis (disorder)^SCT||202410241400-0500|F

@@ -9,5 +9,5 @@ OBX|3|TX|8661-1^Chief complaint^LN||Pain and swelling in the forearm following a
 OBX|4|CWE|72166-2^Tobacco Smoking Status^LN||8517006^Ex-smoker (finding)^SCT||||||F|||202503151400-0400
 OBX|5|XAD|SS002^Treating Facility Location^PHINQUESTION||1234 Anywhere Street^^Doraville^13^30341^USA^C^^13089||||||F|||202503151400-0400
 OBX|6|CWE|11449-6^Pregnancy Status^LN||N^No^HL70532||||||F|||202503151400-0400
-DG1|1||11313841000119108^Stress fracture of left ulna (disorder)^SCT||202503151400-0400|A
+DG1|1||194828000^Stress fracture of left ulna (disorder)^SCT||202503151400-0400|A
 IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
