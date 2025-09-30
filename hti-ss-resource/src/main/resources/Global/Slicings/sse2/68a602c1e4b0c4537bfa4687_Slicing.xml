@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ProfileSlicing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_S" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.2/src/main/resources/hl7-v2-schemas/ProfileSlicing.xsd">
+  <FieldSlicing>
+    <SegmentContext ID="PID_SS02">
+      <OccurrenceSlicing Position="5">
+        <Slice Occurrence="1" Ref="XPN_SS_L"/>
+        <Slice Occurrence="2" Ref="XPN_SS_SU"/>
+      </OccurrenceSlicing>
+    </SegmentContext>
+    <SegmentContext ID="PID_SS01">
+      <OccurrenceSlicing Position="5">
+        <Slice Occurrence="1" Ref="XPN_SS_L"/>
+        <Slice Occurrence="2" Ref="XPN_SS_SU"/>
+      </OccurrenceSlicing>
+    </SegmentContext>
+  </FieldSlicing>
+</ProfileSlicing>

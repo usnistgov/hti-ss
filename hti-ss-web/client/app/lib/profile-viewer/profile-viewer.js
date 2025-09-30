@@ -1071,41 +1071,7 @@
 
 
 	  
-	  //to remove 	  
-	  $scope.findDatatypePotentialPredicates= function(node){
-		if (node.type === "MESSAGE" || node.type === "GROUP"){
-			angular.forEach(node.children, function (child) {
-				child.nodeParent = node;
-				$scope.findDatatypePotentialPredicates(child);
-			});
-		}else if (node.type == "SEGMENT_REF"){
-			var children =  getNodeChildren(node);
-			angular.forEach(children, function (child) {
-				child.nodeParent = node;
-				$scope.findDatatypePotentialPredicates(child);
-			});
-		}else if (node.type == "FIELD" || node.type == "COMPONENT"){
-//			var children = node.children;
-			var children =  getNodeChildren(node);
-			angular.forEach(children, function (child) {
-			  child.nodeParent = node;
-			  child.selfPredicates = [];
-			  child.selfPredicates = child.selfPredicates.concat(getDatatypeLevelPredicates(child));
-			  child.selfPredicates = child.selfPredicates.concat(getSegmentLevelPredicates(child));
-			  child.selfPredicates = child.selfPredicates.concat(getMessageLevelPredicates(child));
-			  child.selfPredicates = child.selfPredicates.concat(getGroupLevelPredicates(child));
-			  
-				  angular.forEach($scope.model.datatypeList, function (datatype) {
-					if (child.datatype === datatype.id && child.selfPredicates.length > 0){
-						datatype.possiblePredicates = child.selfPredicates;
-					}	
-			      });
-			  
-			  		
-	      });
-		}
-		
-	  }
+	 
 	  
       /**
        *

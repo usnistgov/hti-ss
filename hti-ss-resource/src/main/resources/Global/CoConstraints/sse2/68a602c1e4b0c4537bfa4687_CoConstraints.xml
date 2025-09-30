@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CoConstraintContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_CC" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.2/src/main/resources/hl7-v2-schemas/CoConstraintContext.xsd">
+  <ByMessage ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87c">
+    <Context Name="ADT_A01" Path=".">
+      <Segment Name="OBX" Path="12[*]">
+        <SimpleTable>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="SS002" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="XAD"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="1" Usage="R">
+            <Selectors>
+              <Code Code="SS003" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_FacilityVisitType_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="21612-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_AgeUnit_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="56816-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HealthcareServiceLocation_Syndromic"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8302-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="3141-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_WeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="39156-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="BMI_UoM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8661-1" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11368-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TS"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="54094-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="44833-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="11449-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="HL70532_SS"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="*" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11450-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="10160-0" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8677-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8480-6" CodeSystem="NM" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8462-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11289-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_TemperatureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="59408-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_PulseOximetryUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="72166-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_SmokingStatus_MU"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11283-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_EmergencySeverityIndexAcuity_CDC"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="10182-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+        </SimpleTable>
+      </Segment>
+    </Context>
+  </ByMessage>
+  <ByMessage ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87d">
+    <Context Name="ADT_A03" Path=".">
+      <Segment Name="OBX" Path="16[*]">
+        <SimpleTable>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="SS002" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="XAD"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="1" Usage="R">
+            <Selectors>
+              <Code Code="SS003" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_FacilityVisitType_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="21612-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_AgeUnit_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="56816-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HealthcareServiceLocation_Syndromic"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8302-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="3141-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_WeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="39156-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="BMI_UoM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8661-1" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11368-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TS"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="54094-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="44833-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="11449-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="HL70532_SS"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="*" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11450-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="10160-0" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8677-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8480-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8462-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11289-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_TemperatureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="59408-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_TemperatureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="72166-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_SmokingStatus_MU"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11283-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_EmergencySeverityIndexAcuity_CDC"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="10182-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+        </SimpleTable>
+      </Segment>
+    </Context>
+  </ByMessage>
+  <ByMessage ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b207">
+    <Context Name="ADT_A01" Path=".">
+      <Segment Name="OBX" Path="12[*]">
+        <SimpleTable>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="SS002" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="XAD"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="1" Usage="R">
+            <Selectors>
+              <Code Code="SS003" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_FacilityVisitType_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="21612-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_AgeUnit_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="56816-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HealthcareServiceLocation_Syndromic"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8302-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="3141-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_WeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="39156-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="BMI_UoM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8661-1" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11368-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TS"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="54094-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="44833-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="11449-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="HL70532_SS"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="*" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11450-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="10160-0" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8677-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8480-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8462-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11289-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_TemperatureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="59408-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_PulseOximetryUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="72166-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_SmokingStatus_MU"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11283-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_EmergencySeverityIndexAcuity_CDC"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="10182-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+        </SimpleTable>
+      </Segment>
+    </Context>
+  </ByMessage>
+  <ByMessage ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87e">
+    <Context Name="ADT_A01" Path=".">
+      <Segment Name="OBX" Path="12[*]">
+        <SimpleTable>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="SS002" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="XAD"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="1" Usage="R">
+            <Selectors>
+              <Code Code="SS003" CodeSystem="PHINQUESTION" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_FacilityVisitType_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="21612-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_AgeUnit_SyndromicSurveillance"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="56816-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HealthcareServiceLocation_Syndromic"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8302-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_HeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="3141-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_WeightUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="39156-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="BMI_UoM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="8661-1" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11368-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TS"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="54094-8" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="44833-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="11449-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="HL70532_SS"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="*" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11450-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="10160-0" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8677-7" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8480-6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="8462-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_BloodPressureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11289- 6" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_TemperatureUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="59408-5" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-6" Path="6[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_PulseOximetryUnit_UCUM"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="NM"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="72166-2" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_SmokingStatus_MU"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="O">
+            <Selectors>
+              <Code Code="11283-9" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <ValueSet Name="OBX-5" Path="5[*]">
+                <ValueSetBinding BindingStrength="R" Target=".">
+                  <BindingLocations>
+                    <ComplexBindingLocation CodeLocation="1[1]" CodeSystemLocation="3[1]"/>
+                  </BindingLocations>
+                  <Bindings>
+                    <Binding BindingIdentifier="PHVS_EmergencySeverityIndexAcuity_CDC"/>
+                  </Bindings>
+                </ValueSetBinding>
+              </ValueSet>
+              <PlainText Name="OBX-2" Path="2[*]" Value="CWE"/>
+            </Constraints>
+          </CoConstraint>
+          <CoConstraint Max="1" Min="0" Usage="S">
+            <Selectors>
+              <Code Code="10182-4" CodeSystem="LN" Name="OBX-3" Path="3[*]">
+                <BindingLocation CodePath="1[1]" CodeSystemPath="3[1]" Position="1"/>
+              </Code>
+            </Selectors>
+            <Constraints>
+              <PlainText Name="OBX-2" Path="2[*]" Value="TX"/>
+            </Constraints>
+          </CoConstraint>
+        </SimpleTable>
+      </Segment>
+    </Context>
+  </ByMessage>
+</CoConstraintContext>

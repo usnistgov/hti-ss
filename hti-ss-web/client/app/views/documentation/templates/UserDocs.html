@@ -27,11 +27,15 @@
               <td st-ratio="40">{{::doc.title}}</td>
               <td st-ratio="25">
                 <span ng-if="doc.path == null">-</span>
-                <span ng-if="doc.path != null">
+<!--                 Gross, "quick" fix -->
+                <span ng-if="doc.path != null && doc.name !== 'Coming Soon!' ">
 	                    <a class="point" rel="noopener noreferrer" ng-if="isLink(doc.path)" target="_blank"
                        ng-href="{{::doc.path}}">{{::(doc.name && doc.name.trim() ? doc.name : doc.title)}}</a>
                     <a class="point"  ng-if="!isLink(doc.path)" ng-click="downloadDocument(doc.path)">{{::doc.name}}</a>
-                    </span>
+                </span>
+                 <span ng-if="doc.name === 'Coming Soon!' ">
+	                    Coming Soon!
+                </span>
               </td>
               <td st-ratio="15">
                 <span ng-if="doc.date == null">-</span>

@@ -9,8 +9,9 @@
 				appInfo.options.ORGANIZATION_NAME != undefined ?
 				appInfo.options.ORGANIZATION_NAME: 'NIST'}} <span
 					style='color: white;'>{{domain.name}}</span><span
-					style='color: red; font-size: 12px'> {{domain.igVersion}}</span> <span
-					ng-if="isDevTool()" ng-click = "changeDomain('iz-hti-1-svap')" style='color: red; padding-left: 100px; font-size: 60px'>DEV TOOL</span>
+					style='color: red; font-size: 12px'> {{domain.igVersion}}</span> 
+					<span style='color: red; font-size: 30px'>DRAFT RELEASE FOR COMMENTS</span>
+					<span ng-if="isDevTool()" ng-click = "changeDomain('iz-hti-1-svap')" style='color: red; padding-left: 100px; font-size: 60px'>DEV TOOL</span>
 			</div>
 			<div id="appsubtitle">{{appInfo.subTitle}}</div>
 		</a> <span ng-if="isDomainSelectionSupported()"> <span
