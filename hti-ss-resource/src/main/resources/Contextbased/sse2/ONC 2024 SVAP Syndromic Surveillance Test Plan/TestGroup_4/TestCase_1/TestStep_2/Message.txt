@@ -17,4 +17,4 @@ OBX|5|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^30341^US
 OBX|6|TX|10182-4^History of travel Narrative^LN||Spent 4 days at an amusement park and returned 8 days ago.||||||F|||202502200835-0500
 OBX|7|NM|8302-2^Height^LN||29|[in_us]^inch^UCUM|||||F|||202502200835-0500
 OBX|8|NM|3141-9^Weight^LN||20|[lb_av]^pound^UCUM|||||F|||202502200835-0500
-IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U||||||||||||||||||||||||||||||||||||||||||||
+IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U

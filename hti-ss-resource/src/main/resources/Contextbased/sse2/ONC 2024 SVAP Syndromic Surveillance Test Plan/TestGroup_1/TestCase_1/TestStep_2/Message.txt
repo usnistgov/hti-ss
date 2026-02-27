@@ -9,6 +9,6 @@ OBX|3|TX|8661-1^Chief complaint:Find:Pt:Patient:Nom:Reported^LN||Mother states t
 OBX|4|NM|8302-2^Height^LN||27|[in_us]^inch^UCUM|||||F|||202502200900-0500
 OBX|5|NM|3141-9^Weight^LN||17|[lb_av]^pound^UCUM|||||F|||202502200900-0500
 OBX|6|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^30341^USA^^^13089||||||F|||202502200830-0500
-DG1|1||J111^ Influenza due to identified novel influenza A virus with other respiratory manifestations^I10C||202502200910-0500|W
-DG1|2||H61329^ Acquired stenosis of external ear canal secondary to inflammation and infection, unspecified ear^I10C||202502200910-0500|W
-IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
+DG1|1||J111^Influenza due to unidentified influenza virus with other respiratory manifestations^I10C||202502200910-0500|W
+DG1|2||H61329^Acquired stenosis of external ear canal secondary to inflammation and infection, unspecified ear^I10C||202502200910-0500|W
+IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC

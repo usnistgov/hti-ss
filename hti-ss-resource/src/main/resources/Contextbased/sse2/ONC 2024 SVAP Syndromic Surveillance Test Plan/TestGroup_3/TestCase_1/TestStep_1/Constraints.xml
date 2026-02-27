@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="68dc1a6ce4b0c453e33e9709" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
-  <MetaData Date="Tue Sep 30 17:59:08 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="692f441ee4b0c453bfbaa705" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
+  <MetaData Date="Tue Dec 02 19:55:10 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
   <Constraints>
     <Message>
       <ByID ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b207">
@@ -1032,11 +1032,11 @@
     <Context List="12[2].5[*]">
       <Pattern>
         <Trigger>
-          <ErrorMessage>OrderIndifferent Trigger ERROR: [OBX[2]-5.1 (Identifier) = '1028-0' is expected]</ErrorMessage>
+          <ErrorMessage>OrderIndifferent Trigger ERROR: [OBX[2]-5.1 (Identifier) = '1072-8' is expected]</ErrorMessage>
           <Assertion>
             <FORALL>
               <Presence Path="1[1]"/>
-              <PlainText IgnoreCase="true" Path="1[1]" Text="1028-0"/>
+              <PlainText IgnoreCase="true" Path="1[1]" Text="1072-8"/>
             </FORALL>
           </Assertion>
         </Trigger>
@@ -1050,9 +1050,9 @@
           </Constraint>
           <Constraint ID="Content" Target="1[1]">
             <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[2].5[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-            <Description>Invalid content (based on test case fixed data). The value at OBX[2]-5.1 (Identifier) does not match the expected value: '1028-0'.</Description>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[2]-5.1 (Identifier) does not match the expected value: '1072-8'.</Description>
             <Assertion>
-              <PlainText IgnoreCase="true" Path="1[1]" Text="1028-0"/>
+              <PlainText IgnoreCase="true" Path="1[1]" Text="1072-8"/>
             </Assertion>
           </Constraint>
           <Constraint ID="Content" Target="2[1]">

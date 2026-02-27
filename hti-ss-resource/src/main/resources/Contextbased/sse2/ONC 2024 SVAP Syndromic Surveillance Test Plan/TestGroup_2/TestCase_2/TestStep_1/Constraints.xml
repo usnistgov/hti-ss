@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="68dc1a6be4b0c453e33e96e1" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
-  <MetaData Date="Tue Sep 30 17:59:07 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="692f441ee4b0c453bfbaa6dd" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
+  <MetaData Date="Tue Dec 02 19:55:10 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
   <Constraints>
     <Message>
       <ByID ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87c">
@@ -49,9 +49,9 @@
         </Constraint>
         <Constraint ID="Content" Target="1[1].5[1].1[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="MSH[1].5[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at MSH-5.1 (Namespace ID) does not match the expected value: 'NIST PH SS APP 2'.</Description>
+          <Description>Invalid content (based on test case fixed data). The value at MSH-5.1 (Namespace ID) does not match the expected value: 'NIST PH SS APP 1'.</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="1[1].5[1].1[1]" Text="NIST PH SS APP 2"/>
+            <PlainText IgnoreCase="true" Path="1[1].5[1].1[1]" Text="NIST PH SS APP 1"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="1[1].5[1].2[1]">
@@ -63,9 +63,9 @@
         </Constraint>
         <Constraint ID="Content" Target="1[1].5[1].2[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="MSH[1].5[1].2[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at MSH-5.2 (Universal ID) does not match the expected value: '2.16.840.1.113883.3.72.5.50.9'.</Description>
+          <Description>Invalid content (based on test case fixed data). The value at MSH-5.2 (Universal ID) does not match the expected value: '2.16.840.1.113883.3.72.5.50.8'.</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="1[1].5[1].2[1]" Text="2.16.840.1.113883.3.72.5.50.9"/>
+            <PlainText IgnoreCase="true" Path="1[1].5[1].2[1]" Text="2.16.840.1.113883.3.72.5.50.8"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="1[1].5[1].3[1]">
@@ -91,9 +91,9 @@
         </Constraint>
         <Constraint ID="Content" Target="1[1].6[1].1[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="MSH[1].6[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at MSH-6.1 (Namespace ID) does not match the expected value: 'NIST PH SS FAC 2'.</Description>
+          <Description>Invalid content (based on test case fixed data). The value at MSH-6.1 (Namespace ID) does not match the expected value: 'NIST PH SS FAC 1'.</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="1[1].6[1].1[1]" Text="NIST PH SS FAC 2"/>
+            <PlainText IgnoreCase="true" Path="1[1].6[1].1[1]" Text="NIST PH SS FAC 1"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="1[1].6[1].2[1]">
@@ -105,9 +105,9 @@
         </Constraint>
         <Constraint ID="Content" Target="1[1].6[1].2[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="MSH[1].6[1].2[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at MSH-6.2 (Universal ID) does not match the expected value: '2.16.840.1.113883.3.72.5.50.11'.</Description>
+          <Description>Invalid content (based on test case fixed data). The value at MSH-6.2 (Universal ID) does not match the expected value: '2.16.840.1.113883.3.72.5.50.10'.</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="1[1].6[1].2[1]" Text="2.16.840.1.113883.3.72.5.50.11"/>
+            <PlainText IgnoreCase="true" Path="1[1].6[1].2[1]" Text="2.16.840.1.113883.3.72.5.50.10"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="1[1].6[1].3[1]">
@@ -610,17 +610,17 @@
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[2].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[2].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[2].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
           <Description>Expected content is missing. The empty value at DG1[2]-3.1 (Identifier) is expected to be present.</Description>
           <Assertion>
             <Presence Path="14[2].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[2].3[1].1[1]">
-          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[2].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1[2]-3.1 (Identifier) does not match the expected value: '17190001'.</Description>
+          <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[2].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[2]-3.1 (Identifier) does not match one of the expected values: 88386004,17190001,Q790,Q79.0</Description>
           <Assertion>
-            <PlainText IgnoreCase="true" Path="14[2].3[1].1[1]" Text="17190001"/>
+            <StringList CSV="88386004,17190001,Q790,Q79.0" Path="14[2].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[2].3[1].2[1]">

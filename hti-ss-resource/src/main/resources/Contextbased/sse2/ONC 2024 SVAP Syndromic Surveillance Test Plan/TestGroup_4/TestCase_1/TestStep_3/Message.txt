@@ -17,4 +17,4 @@ DG1|3||R509^Fever, unspecified^I10C||202502201300-0500|F
 DG1|4||R059^Cough, unspecified^I10C||202502201300-0500|F
 PR1|1||98960^Education and Training for Patient Self-Management^C4||202502200900-0500
 PR1|2||87798^Infectious agent detection by nucleic acid^C4||202502200900-0500
-IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U||||||||||||||||||||||||||||||||||||||||||||
+IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U

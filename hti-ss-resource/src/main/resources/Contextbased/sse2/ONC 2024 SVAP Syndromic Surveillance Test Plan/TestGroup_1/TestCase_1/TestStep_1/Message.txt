@@ -7,4 +7,4 @@ OBX|1|CWE|SS003^Facility/Visit Type^PHINQUESTION||261QU0200X^Urgent Care^HCPTNUC
 OBX|2|NM|21612-7^Age at Time Patient Reported^LN||6|mo^month^UCUM|||||F|||202502200830-0500
 OBX|3|TX|8661-1^Chief complaint:Find:Pt:Patient:Nom:Reported^LN||Mother states that patient has fever, cough, and earache||||||F|||202502200830-0500
 OBX|4|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^30341^USA^^^13089||||||F|||202502200830-0500
-IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
+IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC

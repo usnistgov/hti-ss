@@ -8,5 +8,5 @@ OBX|2|NM|21612-7^Age at Time Patient Reported^LN||62|a^year^UCUM|||||F|||2024102
 OBX|3|TX|8661-1^Chief complaint:Find:Pt:Patient:Nom:Reported^LN||Vomiting, diarrhea, nausea, and abdominal pain||||||F|||202410201200-0500
 OBX|4|CWE|72166-2^Tobacco Smoking Status^LN||8517006^Ex-smoker^SCT||||||F|||202410201200-0500
 OBX|5|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^30341^USA^^^13089||||||F|||202410201200-0500
-OBX|6|TX|10182-4^History of travel Narrative^LN||Spent 4 days helping out in the heavily flooded area of Hurricane City. Returned home 2 days prior to symptoms..||||||F|||202410201200-0500
-IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U||||||||||||||||||||||||||||||||||||||||||||
+OBX|6|TX|10182-4^History of travel Narrative^LN||Spent 4 days helping out in the heavily flooded area of Hurricane City. Returned home 2 days prior to symptoms.||||||F|||202410201200-0500
+IN1|1|UNK^UNKNOWN^NULLFL|UNKNOWN^^^UNKNOWN&NULLFL&L^U

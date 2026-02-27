@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="68dc1a6be4b0c453e33e96b9" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
-  <MetaData Date="Tue Sep 30 17:59:07 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="692f441de4b0c453bfbaa6b5" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
+  <MetaData Date="Tue Dec 02 19:55:09 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
   <Constraints>
     <Message>
       <ByID ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87e">
@@ -1028,9 +1028,9 @@
         </Constraint>
         <Constraint ID="Content" Target="14[4].3[1].1[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="DG1[4].3[1].1[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed List"/>
-          <Description>Invalid content (based on test case fixed data). The value at DG1[4]-3.1 (Identifier) does not match one of the expected values: 240370009,A072,A07.2,58777003</Description>
+          <Description>Invalid content (based on test case fixed data). The value at DG1[4]-3.1 (Identifier) does not match one of the expected values: 224259003,X38XXXA,X38.XXXA</Description>
           <Assertion>
-            <StringList CSV="240370009,A072,A07.2,58777003" Path="14[4].3[1].1[1]"/>
+            <StringList CSV="224259003,X38XXXA,X38.XXXA" Path="14[4].3[1].1[1]"/>
           </Assertion>
         </Constraint>
         <Constraint ID="Content" Target="14[4].3[1].2[1]">
@@ -1360,13 +1360,13 @@
     <Context List="12[8].5[*]">
       <Pattern>
         <Trigger>
-          <ErrorMessage>OrderIndifferent Trigger ERROR: [OBX[8]-5.4 (State or Province) = '13' is expected] AND [OBX[8]-5.5 (Zip or Postal Code) = '303 41' is expected] AND [OBX[8]-5.6 (Country) = 'USA' is expected] AND [OBX[8]-5.9 (County/Parish Code) = '13089' is expected]</ErrorMessage>
+          <ErrorMessage>OrderIndifferent Trigger ERROR: [OBX[8]-5.4 (State or Province) = '13' is expected] AND [OBX[8]-5.5 (Zip or Postal Code) = '30341' is expected] AND [OBX[8]-5.6 (Country) = 'USA' is expected] AND [OBX[8]-5.9 (County/Parish Code) = '13089' is expected]</ErrorMessage>
           <Assertion>
             <FORALL>
               <Presence Path="4[1]"/>
               <PlainText IgnoreCase="true" Path="4[1]" Text="13"/>
               <Presence Path="5[1]"/>
-              <PlainText IgnoreCase="true" Path="5[1]" Text="303 41"/>
+              <PlainText IgnoreCase="true" Path="5[1]" Text="30341"/>
               <Presence Path="6[1]"/>
               <PlainText IgnoreCase="true" Path="6[1]" Text="USA"/>
               <Presence Path="9[1]"/>
@@ -1405,9 +1405,9 @@
           </Constraint>
           <Constraint ID="Content" Target="5[1]">
             <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[8].5[1].5[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
-            <Description>Invalid content (based on test case fixed data). The value at OBX[8]-5.5 (Zip or Postal Code) does not match the expected value: '303 41'.</Description>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[8]-5.5 (Zip or Postal Code) does not match the expected value: '30341'.</Description>
             <Assertion>
-              <PlainText IgnoreCase="true" Path="5[1]" Text="303 41"/>
+              <PlainText IgnoreCase="true" Path="5[1]" Text="30341"/>
             </Assertion>
           </Constraint>
           <Constraint ID="Content" Target="6[1]">

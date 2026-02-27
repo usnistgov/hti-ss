@@ -406,6 +406,9 @@ angular.module('doc')
         });      
     };
 
+	$scope.isLink = function(path) {
+	   	return path && path != null && path.startsWith("http");
+	};
 	
 	$scope.openMarkdownModal = function(doc) {
 		DocumentationManager.getDocumentContent(doc.id).then(function (result) {

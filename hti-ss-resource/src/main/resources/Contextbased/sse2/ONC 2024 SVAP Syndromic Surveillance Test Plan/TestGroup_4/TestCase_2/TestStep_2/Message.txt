@@ -7,10 +7,10 @@ OBX|1|CWE|SS003^Facility/Visit Type^PHINQUESTION||261QP2300X^Primary Care^HCPTNU
 OBX|2|NM|21612-7^Age at Time Patient Reported^LN||38|a^Year^UCUM|||||F|||202503151400-0400
 OBX|3|TX|8661-1^Chief complaint^LN||Pain and swelling in the forearm following a fall||||||F|||202503151400-0400|
 OBX|4|CWE|72166-2^Tobacco Smoking Status^LN||8517006^Ex-smoker (finding)^SCT||||||F|||202503151400-0400
-OBX|5|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^303 41^USA^^^13089||||||F|||202503151400-0400
+OBX|5|XAD|SS002^Treating Facility Location^PHINQUESTION||^^Doraville^13^30341^USA^^^13089||||||F|||202503151400-0400
 OBX|6|NM|8302-2^Height^LN||64|[in_us]^inch^UCUM|||||F|||202503151435-0400
 OBX|7|NM|3141-9^Weight^LN||155|[lb_av]^pound^UCUM|||||F|||202503151435-0400
 OBX|8|NM|39156-5^Body Mass Index^LN||26.6|kg/m2^kilogram / (meter squared)^UCUM|||||F|||202503151435-0400
 OBX|9|CWE|11449-6^Pregnancy Status^LN||N^No^HL70532||||||F|||202503151435-0400
 DG1|1||11313841000119108^Stress fracture of left ulna (disorder)^SCT||202503151400-0400|W
-IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
+IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC

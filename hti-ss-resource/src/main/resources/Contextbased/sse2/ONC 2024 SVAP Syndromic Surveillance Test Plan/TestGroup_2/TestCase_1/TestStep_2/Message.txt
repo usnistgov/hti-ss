@@ -17,4 +17,4 @@ OBX|11|CWE|56816-2^HospitalUnit^LN||1108-0^EmergencyDepartment^HSLOC||||||F|||20
 DG1|1||S02112A^Type III occipital condyle fracture, initial encounter for closed fracture^I10C||202502201720-0500|W
 DG1|2||S060X9A^Concussion with loss of consciousness of unspecified duration, initial encounter^I10C||202502201720-0500|W
 PR1|1||BW290ZZ^Computerized Tomography (CT Scan) of Head and Neck using High Osmolar Contrast^I10||202502201400-0500
-IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC||||||||||||||||||||||||||||||||||||||||||||
+IN1|1|PlanID123^^HL70072|88110044^^^NIST INSURANCE 1&2.16.840.1.113883.3.72.5.50.13&ISO^HC

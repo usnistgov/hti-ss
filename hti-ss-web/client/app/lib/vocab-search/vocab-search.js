@@ -17,6 +17,7 @@
       };
     }
   ]);
+  
   mod
     .controller('VocabSearchCtrl', ['$scope', '$filter', '$modal', '$rootScope', 'VocabularyService', '$modalStack', function ($scope, $filter, $modal, $rootScope, VocabularyService, $modalStack) {
       $scope.selectedValueSetDefinition = null;
@@ -136,6 +137,7 @@
         $scope.selectionCriteria = "TableId";
         $scope.searchString = null;
         $scope.selectedValueSetDefinition = tableDefinition;
+		$scope.selectedValueSetDefinition.urlMetaData = $scope.getMetadata($scope.selectedValueSetDefinition.url);
         $scope.selectedTableLibrary = tableLibrary;
         $scope.selectedValueSetDefinition.valueSetElements = $filter('orderBy')($scope.selectedValueSetDefinition.valueSetElements, 'code');
         $scope.tmpTableElements = [].concat($scope.selectedValueSetDefinition.valueSetElements);
@@ -186,8 +188,16 @@
         });
       };
 
+	  
+	  
+	  
+	  
+	  
 
     }]);
+	
+	
+	
 
   angular.module('hit-vocab-search').controller('ValueSetCopyrightCtrl', function ($scope, $modalInstance) {
     $scope.close = function () {
