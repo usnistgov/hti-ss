@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.2/src/main/resources/hl7-v2-schemas/Profile.xsd">
+<ConformanceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/usnistgov/hl7-v2-schemas/1.7.2/src/main/resources/hl7-v2-schemas/Profile.xsd">
   <MetaData Date="No Date Info" Name="HL7 Version 2.5.1 Implementation Guide: Syndromic Surveillance, Release 1 - US Realm Standard for Trial Use, July 2019" OrgName="NIST" SpecificationName="No Version Info" Version="null"/>
   <Messages>
-    <Message Description="ADT/ACK -  Register a patient" Event="A04" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87c" Name="PATIENT REGISTRATION - ADT^A04 - OUTPATIENT VISIT BEGIN" StructID="ADT_A01" Type="ADT">
+    <Message Description="ADT/ACK -  Register a patient" Event="A04" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87c" Name="PATIENT REGISTRATION - ADT^A04 - OUTPATIENT VISIT BEGIN" StructID="ADT_A01" Type="ADT">
       <Segment Max="1" Min="1" Ref="MSH_SS" Usage="R"/>
       <Segment Max="*" Min="0" Ref="SFT" Usage="O"/>
       <Segment Max="1" Min="1" Ref="EVN_SS" Usage="R"/>
@@ -35,7 +35,7 @@
       <Segment Max="1" Min="0" Ref="UB2" Usage="O"/>
       <Segment Max="1" Min="0" Ref="PDA" Usage="O"/>
     </Message>
-    <Message Description="ADT/ACK -  Discharge/end visit" Event="A03" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87d" Name="PATIENT DISCHARGE - ADT^A03 - VISIT END" StructID="ADT_A03" Type="ADT">
+    <Message Description="ADT/ACK -  Discharge/end visit" Event="A03" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87d" Name="PATIENT DISCHARGE - ADT^A03 - VISIT END" StructID="ADT_A03" Type="ADT">
       <Segment Max="1" Min="1" Ref="MSH_SS" Usage="R"/>
       <Segment Max="*" Min="0" Ref="SFT" Usage="O"/>
       <Segment Max="1" Min="1" Ref="EVN_SS" Usage="R"/>
@@ -65,7 +65,7 @@
       <Segment Max="1" Min="0" Ref="ACC" Usage="O"/>
       <Segment Max="1" Min="0" Ref="PDA" Usage="O"/>
     </Message>
-    <Message Description="ADT/ACK - Admit/visit notification" Event="A01" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b207" Name="PATIENT ADMIT - ADT^A01 - INPATIENT VISIT BEGIN" StructID="ADT_A01" Type="ADT">
+    <Message Description="ADT/ACK - Admit/visit notification" Event="A01" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b207" Name="PATIENT ADMIT - ADT^A01 - INPATIENT VISIT BEGIN" StructID="ADT_A01" Type="ADT">
       <Segment Max="1" Min="1" Ref="MSH_SS" Usage="R"/>
       <Segment Max="*" Min="0" Ref="SFT" Usage="O"/>
       <Segment Max="1" Min="1" Ref="EVN_SS" Usage="R"/>
@@ -97,7 +97,7 @@
       <Segment Max="1" Min="0" Ref="UB2" Usage="O"/>
       <Segment Max="1" Min="0" Ref="PDA" Usage="O"/>
     </Message>
-    <Message Description="ADT/ACK -  Update patient information" Event="A08" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87e" Name="PATIENT UPDATE - ADT^A08 - VISIT UPDATE" StructID="ADT_A01" Type="ADT">
+    <Message Description="ADT/ACK -  Update patient information" Event="A08" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87e" Name="PATIENT UPDATE - ADT^A08 - VISIT UPDATE" StructID="ADT_A01" Type="ADT">
       <Segment Max="1" Min="1" Ref="MSH_SS" Usage="R"/>
       <Segment Max="*" Min="0" Ref="SFT" Usage="O"/>
       <Segment Max="1" Min="1" Ref="EVN_SS" Usage="R"/>
@@ -129,7 +129,7 @@
       <Segment Max="1" Min="0" Ref="UB2" Usage="O"/>
       <Segment Max="1" Min="0" Ref="PDA" Usage="O"/>
     </Message>
-    <Message Description="General Acknowledgment Message" Event="Varies" ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87f" Name="ACKNOWLEDGEMENT - ACK - ACK" StructID="ACK" Type="ACK">
+    <Message Description="General Acknowledgment Message" Event="Varies" ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87f" Name="ACKNOWLEDGEMENT - ACK - ACK" StructID="ACK" Type="ACK">
       <Segment Max="1" Min="1" Ref="MSH_SS" Usage="R"/>
       <Segment Max="*" Min="0" Ref="SFT" Usage="O"/>
       <Segment Max="1" Min="1" Ref="MSA_SS" Usage="R"/>

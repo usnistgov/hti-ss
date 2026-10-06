@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="692f441de4b0c453bfbaa697" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
-  <MetaData Date="Tue Dec 02 19:55:09 UTC 2025" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
+<ConformanceContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UUID="6a1efd5ee4b0c4530909b3c7" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Jungyubw/NIST_healthcare_hl7_v2_profile_schema/master/Schema/NIST%20Validation%20Schema/ConformanceContext.xsd">
+  <MetaData Date="Tue Jun 02 15:57:18 UTC 2026" Name="Contextbased Constrations" OrgName="NIST" Status="Draft" Version="No Version Info"/>
   <Constraints>
     <Message>
-      <ByID ID="68b873c8e4b0c4533597ad93_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87d">
+      <ByID ID="699e315be4b0c453cd32898c_68a602c1e4b0c4537bfa4687_66fc3ee8857aba0006c8b87d">
         <Constraint ID="Content" Target="1[1].3[1].1[1]">
           <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="MSH[1].3[1].1[1]" Source="testcase" TestDataCategorization="Presence-Configuration"/>
           <Description>Expected content is missing. The empty value at MSH-3.1 (Namespace ID) is expected to be present.</Description>
@@ -1006,6 +1006,99 @@
             <Description>Expected content is missing. The empty value at OBX-5.2 (Text) is expected to be present.</Description>
             <Assertion>
               <Presence Path="2[1]"/>
+            </Assertion>
+          </Constraint>
+        </Constraints>
+      </Pattern>
+    </Context>
+    <Context List="16[6].5[*]">
+      <Pattern>
+        <Trigger>
+          <ErrorMessage>OrderIndifferent Trigger ERROR: [OBX[6]-5.3 (City) = 'Jamaica Plain' is expected] AND [OBX[6]-5.4 (State or Province) = '25' is expected] AND [OBX[6]-5.5 (Zip or Postal Code) = '02130' is expected] AND [OBX[6]-5.6 (Country) = 'USA' is expected] AND [OBX[6]-5.9 (County/Parish Code) = '25025' is expected]</ErrorMessage>
+          <Assertion>
+            <FORALL>
+              <Presence Path="3[1]"/>
+              <PlainText IgnoreCase="true" Path="3[1]" Text="Jamaica Plain"/>
+              <Presence Path="4[1]"/>
+              <PlainText IgnoreCase="true" Path="4[1]" Text="25"/>
+              <Presence Path="5[1]"/>
+              <PlainText IgnoreCase="true" Path="5[1]" Text="02130"/>
+              <Presence Path="6[1]"/>
+              <PlainText IgnoreCase="true" Path="6[1]" Text="USA"/>
+              <Presence Path="9[1]"/>
+              <PlainText IgnoreCase="true" Path="9[1]" Text="25025"/>
+            </FORALL>
+          </Assertion>
+        </Trigger>
+        <Constraints>
+          <Constraint ID="Content" Target="3[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Expected content is missing. The empty value at OBX[6]-5.3 (City) is expected to be present.</Description>
+            <Assertion>
+              <Presence Path="3[1]"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="3[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].3[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[6]-5.3 (City) does not match the expected value: 'Jamaica Plain'.</Description>
+            <Assertion>
+              <PlainText IgnoreCase="true" Path="3[1]" Text="Jamaica Plain"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="4[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].4[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Expected content is missing. The empty value at OBX[6]-5.4 (State or Province) is expected to be present.</Description>
+            <Assertion>
+              <Presence Path="4[1]"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="4[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].4[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[6]-5.4 (State or Province) does not match the expected value: '25'.</Description>
+            <Assertion>
+              <PlainText IgnoreCase="true" Path="4[1]" Text="25"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="5[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].5[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Expected content is missing. The empty value at OBX[6]-5.5 (Zip or Postal Code) is expected to be present.</Description>
+            <Assertion>
+              <Presence Path="5[1]"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="5[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].5[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[6]-5.5 (Zip or Postal Code) does not match the expected value: '02130'.</Description>
+            <Assertion>
+              <PlainText IgnoreCase="true" Path="5[1]" Text="02130"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="6[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].6[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Expected content is missing. The empty value at OBX[6]-5.6 (Country) is expected to be present.</Description>
+            <Assertion>
+              <Presence Path="6[1]"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="6[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].6[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[6]-5.6 (Country) does not match the expected value: 'USA'.</Description>
+            <Assertion>
+              <PlainText IgnoreCase="true" Path="6[1]" Text="USA"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="9[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].9[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Expected content is missing. The empty value at OBX[6]-5.9 (County/Parish Code) is expected to be present.</Description>
+            <Assertion>
+              <Presence Path="9[1]"/>
+            </Assertion>
+          </Constraint>
+          <Constraint ID="Content" Target="9[1]">
+            <Reference GeneratedBy="Test Case Authoring &amp; Management Tool(TCAMT)" ReferencePath="OBX[6].5[1].9[1]" Source="testcase" TestDataCategorization="Value-Test Case Fixed"/>
+            <Description>Invalid content (based on test case fixed data). The value at OBX[6]-5.9 (County/Parish Code) does not match the expected value: '25025'.</Description>
+            <Assertion>
+              <PlainText IgnoreCase="true" Path="9[1]" Text="25025"/>
             </Assertion>
           </Constraint>
         </Constraints>

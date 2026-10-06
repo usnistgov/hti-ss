@@ -3,9 +3,9 @@
  		{
 			"key": "sse2",
 			"position": 1,
-			"rsbVersion"	:"1.0.0",
-    		"version"		: "1.0.0",
-    		"igVersion"		:"1.0.0",
+			"rsbVersion"	:"1.0.1",
+    		"version"		: "1.0.1",
+    		"igVersion"		:"1.0.1",
     		"scope": "GLOBAL",
 			"name": "Syndromic Surveillance Test Suite Edition 2",
 			"homeTitle": "Welcome to the NIST Syndromic Surveillance Test Suite Edition 2!",

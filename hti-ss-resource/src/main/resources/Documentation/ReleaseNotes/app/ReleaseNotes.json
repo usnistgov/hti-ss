@@ -1,11 +1,18 @@
 [	
 	   {
-		"title": "Release notes 1.0.0",
-		"link": "https://hit-dev.nist.gov/tooldocs/SS_SVAP/1.0.0/Release Notes/app/SS-2_Release_Notes.1.0.0.pdf",
-		"name": "SS-2_Release_Notes.1.0.0.pdf",	
-		"date": "2025/09/30",
+		"title": "Release notes 1.0.1",
+		"link": "https://hit-dev.nist.gov/tooldocs/SS_SVAP/1.0.1/Release Notes/app/SS-2_Release_Notes.1.0.1.pdf",
+		"name": "SS-2_Release_Notes.1.0.1.pdf",	
+		"date": "2026/06/02",
 		"order": 1
-	   }
+	   },
+	   {
+   		"title": "Release notes 1.0.0",
+   		"link": "https://hit-dev.nist.gov/tooldocs/SS_SVAP/1.0.0/Release Notes/app/SS-2_Release_Notes.1.0.0.pdf",
+   		"name": "SS-2_Release_Notes.1.0.0.pdf",	
+   		"date": "2025/09/30",
+   		"order": 0
+   	   }
 ]
 
 
